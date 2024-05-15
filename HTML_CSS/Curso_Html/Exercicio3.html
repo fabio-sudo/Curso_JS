@@ -1,0 +1,48 @@
+<!-- #region 
+Clique com direito na página html -> Open With Live Server
+Desta for você consegue visualizar no navegador
+1- Faça um documento HTML utilizado Classe para trocar a cor do título
+2- Colocar tamnho da fonte com 24px
+3- Faça um botão para trocar o texto do parágrafo usando Classe
+4- Utilize multiplas classes em um parágrafo
+CTL+S -> Salva
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Classes</title>
+    <style>
+        .tituloPrincipal {
+            color: blue;
+            font-size: 24px;
+        }
+        .textoDestacado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--CSS multiplas classes-->
+    <h1 class="tituloPrincipal">Este é o título principal</h1>
+    <p class="textoDestacado">Este é um parágrafo destacado.</p>
+    <p class="textoDestacado">Este também é um parágrafo destacado.</p>
+    <p class="textoDestacado tituloPrincipal">Este parágrafo está destacado e fonte aumentada.</p>
+
+    <!--JS DOM Classe-->
+    <button onclick="mudarTexto()">Clique para alterar o texto dos parágrafos destacados</button>
+
+    <script>
+        function mudarTexto() {
+            const elementos = document.getElementsByClassName("textoDestacado");
+            for (let elemento of elementos) {
+                elemento.innerText = "O texto destacado foi mudado!";
+            }
+        }
+    </script>
+</body>
+</html>

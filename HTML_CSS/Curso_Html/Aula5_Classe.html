@@ -1,0 +1,34 @@
+<!-- Reaproveitamento do stilo em dois elementos -->
+    <style>
+        .destacado {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <p class="destacado">Este parágrafo está destacado.</p>
+    <p class="destacado">Este também está destacado.</p>    
+
+    <!-- Multiplas Classes -->
+    <style>
+        .textoVerde {
+            color: green;
+        }
+        .textoGrande {
+            font-size: 20px;
+        }
+    </style>
+    <p class="textoVerde textoGrande">Este parágrafo é verde e grande.</p>
+
+<!-- Utilização método DOM JS com classe -->
+<p class="paraMudar">Este parágrafo será alterado.</p>
+<p class="paraMudar">Este também será alterado.</p>
+<button onclick="mudarTexto()">Clique aqui para alterar o texto</button>
+
+<script>
+    function mudarTexto() {
+        const elementos = document.getElementsByClassName("paraMudar");
+        for (let elemento of elementos) {
+            elemento.innerText = "O texto foi mudado!";
+        }
+    }
+</script>

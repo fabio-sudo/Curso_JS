@@ -1,0 +1,34 @@
+<!-- #region 
+Clique com direito na página html -> Open With Live Server
+Desta for você consegue visualizar no navegador
+1- Faça um documento HTML utilizado ID para trocar a cor do título
+2- Colocar tamnho da fonte com 24px
+3- Faça um botão para trocar o texto do parágrafo usando ID
+CTL+S -> Salva
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de ID</title>
+    <style>
+        #tituloPrincipal {
+            color: green;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tituloPrincipal">Este é o título principal</h1>
+    <p id="paragrafoTexto">Este é um parágrafo que será alterado.</p>
+    <button onclick="alterarParagrafo()">Clique para alterar o texto</button>
+
+    <script>
+        function alterarParagrafo() {
+            document.getElementById("paragrafoTexto").innerText = "O texto do parágrafo foi alterado!";
+        }
+    </script>
+</body>
+</html>

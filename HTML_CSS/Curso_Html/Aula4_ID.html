@@ -1,0 +1,29 @@
+<!--Estilização com CSS -->
+<style>
+    #meuElemento {
+        color: blue;
+        font-size: 20px;
+    }
+</style>
+<p id="meuElemento">Este é um parágrafo estilizado com um id.</p>
+
+<!--Utilização com JS -->
+<p id="meuParagrafo">Clique no botão para mudar este texto.</p>
+<button onclick="mudarTexto()">Clique aqui</button>
+<br>
+
+<script>
+    function mudarTexto() {
+        document.getElementById("meuParagrafo").innerText = "O texto foi mudado!";
+    }
+</script>
+
+<!--Navegação -->
+<p><a href="#seção1">Ir para a Seção 1</a></p>
+<p><a href="#seção2">Ir para a Seção 2</a></p>
+
+<h2 id="seção1">Seção 1</h2>
+<p>Conteúdo da Seção 1.</p>
+
+<h2 id="seção2">Seção 2</h2>
+<p>Conteúdo da Seção 2.</p>
