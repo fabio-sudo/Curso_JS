@@ -1,0 +1,2 @@
+https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
+https://www.w3schools.com/html/html_form_input_types.asp

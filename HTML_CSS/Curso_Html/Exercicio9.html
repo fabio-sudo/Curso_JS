@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 30%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {        
+            background-color: cornflowerblue;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        tbody tr:nth-child(even) {
+            background-color: silver;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        tfoot {
+            background-color: cornflowerblue;
+            font-weight: bold;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <!--Cabeçário-->
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+
+        <!--Valores-->
+        <tbody>
+            <tr>
+                <td>Processador</td>
+                <td>1</td>
+                <td>R$ 1200,00</td>
+            </tr>
+            <tr>
+                <td>Memória DDR 4</td>
+                <td>2</td>
+                <td>R$ 130,00</td>
+            </tr>
+            <tr>
+                <td>HD SSD</td>
+                <td>1</td>
+                <td>R$ 150,00</td>
+            </tr>
+            <tr>
+                <td>Placa de Vídeo</td>
+                <td>1</td>
+                <td>R$ 2.350,00</td>
+            </tr>
+        </tbody>
+        
+        <!--Rodapé-->
+        <tfoot>
+            <tr>
+                <td colspan="2">Valor Total:</td>
+                <td colspan="1">R$ 3830,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

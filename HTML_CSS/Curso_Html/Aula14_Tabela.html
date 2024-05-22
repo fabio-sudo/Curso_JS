@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        tfoot {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Exemplo de Tabela com HTML e CSS</caption>
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 30%;">
+            <col style="width: 40%;">
+        </colgroup>
+        <!--Cabeçário-->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+
+        <!--Valores-->
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Bruno</td>
+                <td>30</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>28</td>
+                <td>Belo Horizonte</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>35</td>
+                <td>Curitiba</td>
+            </tr>
+        </tbody>
+        
+        <!--Rodapé-->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de Registros: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
