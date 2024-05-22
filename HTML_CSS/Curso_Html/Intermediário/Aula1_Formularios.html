@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="/submit" method="post">
+        <!-- Campo de texto para o nome -->
+        <!-- For do label e para relacionar com input -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- Campo de texto para o e-mail -->
+        <input type="email" id="email" name="email" placeholder="e-mail" required>
+        <br><br>
+
+        <!-- Área de texto para comentários -->
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Botões de rádio para escolher o gênero -->
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+        <!-- Caixas de seleção para selecionar hobbies -->
+        <label>Hobbies:</label>
+        <input type="checkbox" id="esportes" name="hobbies" value="esportes">
+        <label for="esportes">Esportes</label>
+        <input type="checkbox" id="musica" name="hobbies" value="musica">
+        <label for="musica">Música</label>
+        <input type="checkbox" id="viagem" name="hobbies" value="viagem">
+        <label for="viagem">Viagem</label>
+        <br><br>
+
+        <!-- Lista suspensa para escolher um país -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br><br>
+
+         <!--Data-->
+         <label for="number">Número:</label>
+         <input type="number" id="number" name="number">
+         <br><br>
+
+        <!--Data-->
+        <label for="date">Data:</label>
+        <input type="date" id="data" name="data" value="2024-05-22" />
+        <br><br>
+
+        <!--Data Tempo-->
+        <label for="datalocal">Data:</label>
+        <input type="datetime-local" id="datalocal" name="datalocal">
+        <br><br>
+
+        <!--Tempo-->
+        <label for="time">Tempo:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <!--COr-->
+        <label for="cor">Cor:</label>
+        <input type="color" id="color" name="color">
+        <br><br>        
+
+        <!--Selecionar Arquivo -->
+        <!--accept="Você define o tipo de arquivo suportado " multiple "define multipla seleção" -->
+        <label for="file">Selecionar:</label>
+        <input type="file" id="file" name="file" accept=".png" multiple>
+        <br><br>   
+
+        <!--Range-->
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="10" value="0">
+        <br><br>  
+
+
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
