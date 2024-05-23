@@ -1,0 +1,95 @@
+/* Basic form styling */
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Pseudo-classes for styling */
+
+/* Input fields when focused */
+
+input:focus{
+    box-shadow: 0 0 5px black;
+    outline: none;
+}
+
+
+input[type="text"]:focus {
+    border-color: solid 1px black;
+}
+
+input[type="email"]:focus{
+    border-color: red;
+}
+input[type="email"]:disabled{
+    cursor: not-allowed;
+}
+
+
+input[type="password"]:focus{
+
+    border-color:purple;
+}
+
+/* Button when hovered */
+button:hover {
+    background-color: skyblue;
+}
+button:active {
+    background-color: darkcyan;
+}
+
+/* Link */
+a{color: orange; display: block; margin: 10px 10px 10px 10px;}
+a:visited{color: deeppink;}
+a:hover{color:black; text-decoration: none;}
+
+/* Checked */
+input[type="checkbox"]:not(:checked) + a {
+    text-align: left;
+}
+input[type="checkbox"]:checked + a {
+    text-align: center;
+}
+/* Adding content before the link */
+input[type="checkbox"]:checked + a::before {
+    content: "+";
+}
+
