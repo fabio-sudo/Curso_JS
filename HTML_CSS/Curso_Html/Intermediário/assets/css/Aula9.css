@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0; /* Adicionado para remover padding padrão */
+    box-sizing: border-box; /* Garante que padding e border não afetem as dimensões declaradas */
+}
+
+.pai {
+    position: static; /* Posição padrão (static), sem deslocamento */
+    height: 100vh; /* Ajustando a altura do pai para a altura total da viewport */
+    background-color: lightgray; /* Cor de fundo para facilitar a visualização */
+}
+
+.filha1, .filha2, .filha3, .filha4, .filha5 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.filha1 {
+    background-color: violet;
+    position: relative; /* Define que a posição do elemento será relativa */
+    top: 60px; /* Move o elemento 60 pixels para baixo da posição original */
+    left: 50px; /* Move o elemento 50 pixels para a direita da posição original */
+    bottom: 0; /* Sem efeito prático aqui devido ao 'top' estar definido */
+    right: 0px; /* Sem efeito prático aqui devido ao 'left' estar definido */
+}
+
+.filha2 {
+    background-color: bisque;
+    position: absolute; /* Remove o elemento do fluxo normal e o posiciona em relação ao contêiner pai */
+    top: 50px; /* Posiciona o elemento 50 pixels a partir do topo do contêiner pai */
+    right: 50px; /* Posiciona o elemento 50 pixels a partir da borda direita do contêiner pai */
+}
+
+.filha3 {
+    position: absolute;
+    background-color: black;
+    opacity: 30%;
+    bottom: 100px; /* Posiciona o elemento 100 pixels a partir da parte inferior do contêiner pai */
+    left: 50px; /* Posiciona o elemento 50 pixels a partir da borda esquerda do contêiner pai */
+}
+
+.filha4 {
+    z-index: 2; /* Muda o elemento para a frente (camada superior) */
+    position: absolute;
+    background-color: azure;
+    bottom: 100px; /* Posiciona o elemento 100 pixels a partir da parte inferior do contêiner pai */
+    right: 50px; /* Posiciona o elemento 50 pixels a partir da borda direita do contêiner pai */
+}
+
+.filha5 {
+    z-index: 1;
+    position: absolute;
+    background-color: cornflowerblue;
+    bottom: 35%; /* Posiciona o elemento 35% a partir da parte inferior do contêiner pai */
+    right: 33%; /* Posiciona o elemento 33% a partir da borda direita do contêiner pai */
+    margin: 0px 50px 0px 0px;
+}
+
+.filha6 {
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    top: 0px;
+    position: fixed; /* Fixa o elemento na página independente da rolagem */
+    background-color: white;
+}
+
+.filha7 {
+    width: 100%;
+    height: 30px;
+    margin: 0px;
+    bottom: 0px;
+    position: fixed; /* Fixa o elemento na página independente da rolagem */
+    background-color: deeppink;
+}
+
+.float {
+    width: 100px;
+    height: 100px;    
+    background-color: mediumslateblue;
+    float: left; /* O elemento flutua à esquerda */
+    border-radius: 50%; /* Transforma o elemento em um círculo */
+    margin: 0px; /* Adiciona uma margem ao redor do elemento */
+}

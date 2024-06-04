@@ -1,0 +1,45 @@
+/* Estilo padrão para o corpo da página */
+body {
+    background-color: white; /* Cor de fundo branca */
+    color: black;            /* Cor do texto preta */
+}
+
+/* Media Query para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue; /* Cor de fundo azul claro */
+        color: darkblue;             /* Cor do texto azul escuro */
+    }
+}
+
+/* Media Query para telas com largura entre 601px e 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        background-color: lightgreen; /* Cor de fundo verde claro */
+        color: darkgreen;             /* Cor do texto verde escuro */
+    }
+}
+
+/* Media Query para telas com largura entre 901px e 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    body {
+        background-color: lightcoral; /* Cor de fundo coral claro */
+        color: darkred;               /* Cor do texto vermelho escuro */
+    }
+}
+
+/* Media Query para telas com largura entre 1201px e 1500px */
+@media (min-width: 1201px) and (max-width: 1500px) {
+    body {
+        background-color: lightgoldenrodyellow; /* Cor de fundo amarelo claro */
+        color: goldenrod;                      /* Cor do texto dourado */
+    }
+}
+
+/* Media Query para telas com largura superior a 1500px */
+@media (min-width: 1501px) {
+    body {
+        background-color: lightgray; /* Cor de fundo cinza claro */
+        color: darkgray;             /* Cor do texto cinza escuro */
+    }
+}

@@ -1,0 +1,6 @@
+Usando Media Queries
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
+
+Meida
+https://www.w3schools.com/cssref/css3_pr_mediaquery.php

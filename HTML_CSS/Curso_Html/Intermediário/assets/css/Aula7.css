@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.div_unidades {
+    width: 80%; /* Utilizando porcentagem */
+    margin: 0 auto; /* Centralizando */
+    background-color: lightgray;
+    padding: 20px;
+}
+.item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: lightblue;
+}
+/* Utilizando pixels */
+.item.px {
+    width: 200px;
+}
+/* Utilizando porcentagem */
+.item.pct {
+    width: 50%;
+}
+/* Utilizando viewport units */
+.item.vw {
+    width: 30vw;
+}

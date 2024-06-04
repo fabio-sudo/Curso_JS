@@ -1,0 +1,71 @@
+/* Estilo para negrito */
+.texto {
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo para itálico */
+/* Deixa o texto em itálico */
+.texto {
+    font-style: italic;
+}
+
+/* Estilo para sublinhado */
+/* Adiciona uma linha embaixo do texto */
+.texto {
+    text-decoration: underline;
+}
+
+/* Estilo para riscado */
+/* Adiciona uma linha no meio do texto */
+.texto {
+    text-decoration: line-through;
+}
+
+/* Estilo para tamanho de fonte */
+/* Define o tamanho da fonte para 20 pixels */
+.texto {
+    font-size: 50px;
+}
+
+/* Estilo para cor do texto */
+/* Define a cor do texto como vermelho */
+.texto {
+    color: paleturquoise;
+}
+
+/* Estilo para espaçamento entre linhas */
+/* Define o espaçamento entre as linhas como 1.5 vezes o tamanho da fonte */
+.texto {
+    line-height: 1.5;
+}
+
+/* Estilo para espaçamento entre letras */
+.texto {
+    letter-spacing: 2px; /* Define o espaçamento entre as letras como 2 pixels */
+}
+
+/* Estilo para espaçamento entre palavras */
+.texto {
+    word-spacing: 5px; /* Define o espaçamento entre as palavras como 5 pixels */
+}
+
+/* Estilo para tipo de fonte */
+.texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define o tipo de fonte como Arial ou uma fonte sans-serif genérica */
+}
+
+/* Sombra */
+.texto {
+    text-shadow: -3px 1px purple; 
+}
+
+
+/* Estilo para texto em maiúsculas */
+.texto {
+    text-transform: uppercase; /* Transforma todo o texto em maiúsculas */
+}
+
+/* Estilo para capitalização */
+.texto {
+    text-transform: capitalize; /* Transforma a primeira letra de cada palavra em maiúscula */
+}
