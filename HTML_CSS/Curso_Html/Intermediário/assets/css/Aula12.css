@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    height: 300px;
+    border: 1px solid #000;
+}
+.example-container {
+    display: flex;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%; /* Aumenta a largura do contêiner */
+}
+.item {
+    background-color: bisque;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+}
+.title {
+    flex-basis: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Alinhamentos Container Flex Box*/
+.item-auto {
+    align-self: auto; /* Segue o alinhamento do contêiner */
+}
+.item-flex-start {
+    align-self: flex-start; /* Alinha ao início do eixo transversal */
+}
+.item-flex-end {
+    align-self: flex-end; /* Alinha ao final do eixo transversal */
+}
+.item-center {
+    align-self: center; /* Alinha ao centro do eixo transversal */
+}
+.item-baseline {
+    align-self: baseline; /* Alinha à linha de base do conteúdo */
+}
+.item-stretch {
+    align-self: stretch; /* Estica para preencher o contêiner */
+}
+
+
+/* Alinhamento Items */
+.example-container-row {
+    flex-direction: row; /* Valor padrão, itens na horizontal */
+    background-color: red;
+}
+.example-container-reverse {
+    flex-direction: row-reverse; /* Itens na horizontal, mas ordem inversa */
+    background-color: burlywood;
+}
+.example-container-column {
+    flex-direction: column; /* Itens na vertical */
+    background-color: rebeccapurple;
+}
+.example-container-column-reverse {
+    flex-direction: column-reverse; /* Itens na vertical, mas ordem inversa */
+    background-color: antiquewhite;
+}
+
