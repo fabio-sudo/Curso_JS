@@ -1,0 +1,50 @@
+  .container_css{
+    margin: 15px;
+    margin-left: 15px;
+  }
+  
+  .nomes-list-container {
+    border: deepskyblue 1px solid;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: #fff;
+  }
+  .nomes-list-container h2 {
+    margin-bottom: 20px;
+  }
+  .nomes-list-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .nomes-list-container ul li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+  }
+
+  h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large; 
+    font-weight: bold;       
+  }
+
+  li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium; 
+  }
+
+  .nomes-list-container ul li:hover {
+    background-color: steelblue;
+  }
+
+  .btn-primary, .btn-danger{
+    margin: 10px 0px 0px 0px;
+    border-radius: 20px;
+    padding: 15px;
+    width: 150px;
+  }

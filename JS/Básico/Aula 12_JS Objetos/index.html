@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="minha_div">
+        <!-- Formulário -->
+        <div class="box">
+            <form onsubmit="return false">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua n°">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputState">Estado</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Selecione...</option>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Minas Gerais</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="add()">Adicionar</button>
+                <button class="btn btn-danger" onclick="limparTabela()">Limpar</button>
+            </form>
+        </div>
+
+        <!-- Grid -->
+        <div class="box2">
+            <h1>Clientes</h1>
+            <!-- Conteúdo adicional para o grid -->
+            <div id="grid">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-borderless table-primary align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Endereço</th>
+                                <th>Cidade</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody" class="table-group-divider">
+                            <!-- Linhas adicionadas pelo JavaScript aparecerão aqui -->
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="assets/script.js"></script>
+
+        <!-- Scripts do Bootstrap (jQuery e Popper.js necessários para o Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>

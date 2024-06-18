@@ -1,0 +1,30 @@
+/* Estilizando os controles de formulário */
+.form-control {
+    width: 300px; /* Largura fixa para o campo de entrada */
+    margin-right: 10px; /* Margem direita para separar os botões */
+}
+
+/* Estilizando os botões */
+.btn-primary {
+    margin-bottom: 10px; /* Espaçamento abaixo do botão 'Gerar' */
+}
+
+.btn-danger {
+    margin-bottom: 10px; /* Espaçamento abaixo do botão 'Limpar' */
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+p:hover{
+
+    color: coral;
+}
+
+.mt-3 {
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento acima */
+}
+/* Estilos adicionais conforme necessário */

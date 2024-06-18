@@ -1,0 +1,24 @@
+.box {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+.box2 {
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+.minha_div {
+    display: flex;
+    width: 100%;
+}
+
+table{background-color: antiquewhite;}
